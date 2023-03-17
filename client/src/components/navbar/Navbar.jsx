@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className={classes.wrapper}>
         <div className={classes.left}>
           <Link to='/'>Excel</Link>
-        </div>1
+        </div>
         <ul className={classes.center}>
           <li className={classes.listItem}>Home</li>
           <li className={classes.listItem}>About</li>
