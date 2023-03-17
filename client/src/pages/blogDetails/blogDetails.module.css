@@ -114,3 +114,32 @@
     color: #000;
     font-weight: bold;
 }
+@media (max-width: 767.98px){
+    .container{
+        
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .wrapper{
+      
+        display: flex;
+        flex-direction: column;
+    }
+    .desc{
+        margin-top: 2.5rem;
+        color: #333;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.75px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper > img{
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    
+}

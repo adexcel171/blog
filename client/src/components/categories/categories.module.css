@@ -152,7 +152,7 @@
         
         
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         margin-left: 6px;
             max-width: 1180px;
@@ -169,4 +169,10 @@
     
     margin-top: 7.5rem;
 }
+.categoriesAndBlogs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 }

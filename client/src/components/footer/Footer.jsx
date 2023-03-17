@@ -14,15 +14,15 @@ const Footer = () => {
         </div>
         <div className={classes.col}>
           <h2>Contacts</h2>
-          <span>Phone: +123 456 789</span>
-          <span>YouTube: WebDevMania</span>
-          <span>GitHub: WebDevMania</span>
+          <span>Phone: +234 811 922 3162</span>
+          <span>Instagram: admire_excellence</span>
+          <span>Linkedin: Godswill Okenyi</span>
         </div>
         <div className={classes.col}>
           <h2>Location</h2>
-          <span>Continent: Europe</span>
-          <span>Country: Bulgaria</span>
-          <span>Current Location: Bulgaria</span>
+          <span>Continent: Africa</span>
+          <span>Country: Nigeria</span>
+          <span>Current Location: Abuja Nigeria</span>
         </div>
       </div>
     </footer>
