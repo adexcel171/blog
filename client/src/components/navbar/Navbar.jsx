@@ -2,17 +2,24 @@ import React from 'react'
 import classes from './navbar.module.css'
 import { Link } from 'react-router-dom'
 import logoImg from '../../assets/logo.jpg'
-import { useState } from 'react'
+import { useState } from 'react' 
+import {logout} from '../../redux/authSlice'
+import {useSelector, useDispatch} from 'react-redux'
 
 const Navbar = () => {
   const [showModal, setShowModal] = useState(false)
+  const dispatch = useDispatch();
+
+  const handleLogout = () => {
+    dispatch(logout())
+  }
 
   return (
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <div className={classes.left}>
           <Link to='/'>Excel</Link>
-        </div>
+        </div>1
         <ul className={classes.center}>
           <li className={classes.listItem}>Home</li>
           <li className={classes.listItem}>About</li>
@@ -24,7 +31,7 @@ const Navbar = () => {
           {showModal &&
             <div className={classes.modal}>
               <Link to='/create'>Create</Link>
-              <span>Logout</span>
+              <span onClick={handleLogout} >Logout</span>
             </div>
           }
         </div>
