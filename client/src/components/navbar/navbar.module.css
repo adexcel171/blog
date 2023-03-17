@@ -91,40 +91,34 @@
  @media (max-width: 767.98px){
     .container{
         display: flex;
-        width: 100%;
-    
-    
+        margin: 0 5px;
         position: sticky;
         top: 0;
-        left: 0;
-        border-bottom: 1px solid white;
+    
         background-color: darkgray;
         z-index: 999;
+    
     }
     
     .wrapper{
     
         
         display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
+        justify-content: space-around;
+        margin: 2px;
+        padding: 4px;
+
+    
     }
     .left{
-        font-size: 16px;
-        font-weight: bold;
-        padding: 8px;
-    }
-    .right{
-        
-        gap: 0.75rem;
-        color: #fff;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
     
-        
+    }
+    .center{
+        display:none;
+       
+    }
 
-    }
-    
  	
  }
