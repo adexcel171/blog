@@ -129,3 +129,25 @@
     border: 1px solid rgb(170, 165, 165);
     text-transform: capitalize;
 }
+@media (max-width: 767.98px){
+    
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #444;
+    border-radius: 22px;
+    padding: 1.5rem;
+    width: 350px;
+}
+.inputWrapperImg>label>span {
+    display: inline-block;
+    
+    background-color: teal;
+    color: #fff;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 150ms all;
+    border-radius: 1rem;
+    margin-left: 8rem;
+}
+}

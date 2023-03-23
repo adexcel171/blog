@@ -41,7 +41,7 @@ const FeaturedBlogs = () => {
               <div className={classes.secondaryBlogData}>
                 <h4>Data Science</h4>
                 <p className={classes.desc}>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, hic inventore? Atque?
+                  the best way to success is hard work
                 </p>
                 <div className={classes.authorAndCreatedAt}>
                   <span><span>Author:</span>Chinda Kelvin</span>
@@ -54,7 +54,7 @@ const FeaturedBlogs = () => {
               <div className={classes.secondaryBlogData}>
                 <h4>Data analysis</h4>
                 <p className={classes.desc}>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, hic inventore? Atque?
+                  how data science can save your time
                 </p>
                 <div className={classes.authorAndCreatedAt}>
                   <span><span>Author:</span> Stephen Ufort</span>

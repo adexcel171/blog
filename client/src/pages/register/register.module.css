@@ -74,3 +74,16 @@ form > p > a{
     color: #888;
     margin-top: 0.25rem;
 }
+
+@media (max-width: 767.98px){
+
+
+.wrapper{
+    height: 60vh;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+}

@@ -110,7 +110,7 @@ const Create = () => {
             </div>
             <div className={classes.inputWrapperImg}>
               <label htmlFor='image' className={classes.labelFileInput}>
-                Image: <span>Upload here</span>
+               <span>  Upload here</span>
               </label>
               <input
                 id="image"
