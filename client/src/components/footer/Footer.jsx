@@ -7,9 +7,7 @@ const Footer = () => {
       <div className={classes.wrapper}>
         <div className={classes.col}>
           <h2>About the App</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Possimus quo voluptatum, ullam quam perspiciatis deleniti obcaecati architecto,
-            sed minus culpa autem suscipit rem vero voluptas alias animi. Iure, eaque dicta!
+          <p> At our Blog App, we believe evryone has a unique voice and story to share with the world. <br/> Whether your a seasoned witter, an aspiring blogger, or just someone wwho love to expresss their thought. excel blog provides you with perfect space to unleash your creativity.
           </p>
         </div>
         <div className={classes.col}>
