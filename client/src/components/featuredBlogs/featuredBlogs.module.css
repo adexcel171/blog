@@ -1,20 +1,36 @@
+
 .container{
     height: 100vh;
     width: 100%;
 
+
 }
 
 .wrapper{
-    max-width: 1180px;
-    margin: 0 auto;
-    height: 100%;
+ 
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    gap: 2rem;
-    font-family: sans-serif;
+    flex-wrap: wrap;
+    font-family: 'Poppins';
+    margin: 50px 0;
     
+    
+}
+.cards{
+    position: relative;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 5px 0;
+
+    box-shadow: 9px -12px 5px 0px rgba(212,206,206,0.75);
+-webkit-box-shadow: 9px -12px 5px 0px rgba(212,206,206,0.75);
+-moz-box-shadow: 9px -12px 5px 0px rgba(212,206,206,0.75);
 }
 
 .wrapper > h3{
@@ -22,7 +38,19 @@
     font-size: 36px;
     color:black;
     font-weight: bold;
-    font-family: serif;
+    
+}
+.btn{
+    position: absolute;
+    width: 120px;
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 16px;
+    margin: 5px auto;
+    bottom: 60px;
+    
+    
 }
 
 .wrapper > .blogs{
@@ -145,54 +173,42 @@
 @media (max-width: 767.98px){
 
     .container{
-        height: 100vh;
-        max-width:100%;
         
+        width: 100%;
+        max-height: 100%;
+        margin-bottom: 100px;
+    
+    
+    
     }
     
     .wrapper{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        margin: 0 auto;
-        height: 100vh;
-        margin-top: 30px;
-        
-      
-        
-    }
-    .blogs, .secondaryBlog{
-        display: flex;
         justify-content: center;
         flex-direction: column;
-        max-width: 400px;
+        align-items: center;
+        margin: 50px 0;
 
-        margin-bottom: 20px;
-        margin: 0 auto;
-    }
-    img{
+    
+
+        
+        
+      }
+
+      .cards{
+        
         width: 300px;
-        overflow: hidden;
-        overflow-clip-margin: inherit;
-    }
-    .mainBlog {
-    display: none;
-    }
-    .secondaryBlogData > h4{
-        font-size: 32px;
-        font-weight: bold;
-        color: rgb(8, 8, 8);
-    }
-    .secondaryBlogData > .desc{
-        font-size: 24px;
-        font-weight: bold;
-        color:black;
-    }
-    .authorAndCreatedAt{
-        font-size: 16px;
-        font-weight: bold;
-        color: rgb(8, 8, 8);
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        margin: 20px 0;
+    
+        box-shadow: 9px -12px 5px 0px rgba(212,206,206,0.75);
+    -webkit-box-shadow: 9px -12px 5px 0px rgba(212,206,206,0.75);
+    -moz-box-shadow: 9px -12px 5px 0px rgba(212,206,206,0.75);
     }
     
 }

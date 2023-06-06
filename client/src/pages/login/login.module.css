@@ -4,22 +4,21 @@
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-image: url('../../assets/mountain1.jpg');
-    background-color: rgba(0, 0, 0, 0.2);
-    background-size: cover;
+  
     background-blend-mode: darken;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
 }
 
 .wrapper{
     height: 52.5vh;
     width: 25vw;
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    
 }
 
 .wrapper > h2{
@@ -40,7 +39,7 @@ form > input{
     width: 50%;
     outline: none;
     border: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid rgb(14, 13, 13);
 }
 
 form > button{
@@ -66,6 +65,7 @@ form>button:hover{
         flex-direction: column;
         align-items: center;
         
+        
     }
     .wrapper{
         height: 50vh;
@@ -81,12 +81,19 @@ form>button:hover{
         left: 0;
         height: 100vh;
         
-        background-image: url('../../assets/mountain1.jpg');
-        background-color: rgba(0, 0, 0, 0.2);
-        background-size: cover;
-        background-blend-mode: darken;
+        
+    
         display: flex;
         justify-content: center;
         align-items: center;
+        background-position: center;
     }
+    
+form > input{
+    width: 60%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(15, 15, 15);
+}
+
 }

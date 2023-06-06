@@ -1,70 +1,40 @@
-import React from 'react'
+
 import classes from './featuredBlogs.module.css'
-import natureImg1 from '../../assets/nature1.jpg'
-import dataImg2 from '../../assets/data2.jpg'
-import {MdOutlinePreview} from 'react-icons/md'
-import {AiFillLike} from 'react-icons/ai'
+import  tech from '../../assets/data2.jpg'
+import  mountain from '../../assets/mountain1.jpg'
+import  mountain2 from '../../assets/mountain2.jpg'
 
 const FeaturedBlogs = () => {
   return (
     <div className={classes.container}>
       <div className={classes.wrapper}>
-        <h3>Featured Blogs</h3>
-        <div className={classes.blogs}>
-          <div className={classes.left}>
-            <div className={classes.mainBlog}>
-              <img src={natureImg1} alt="" />
-              <div className={classes.mainBlogData}>
-                <div className={classes.categoryAndMetadata}>
-                  <span className={classes.category}>Nature</span>
-                  <div className={classes.metadata}>
-                    <MdOutlinePreview /> 123 views
-                  </div>
-                  <div className={classes.metadata}>
-                    <AiFillLike /> 100 likes
-                  </div>
-                </div>
-                <h4>Nature is good for relaxation</h4>
-                <p className={classes.blogDesc}>
-                  A nice view of a mood at night. <br /> beautiful mother nature. relaxation is key
-                </p>
-                <div className={classes.authorAndCreatedAt}>
-                  <span><span>Author:</span> Chuks</span>
-                  <span><span>Created:</span> 27-02-2023</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={classes.right}>
-            <div className={classes.secondaryBlog}>
-              <img src={dataImg2} alt="" />
-              <div className={classes.secondaryBlogData}>
-                <h4>Data Science</h4>
-                <p className={classes.desc}>
-                  the best way to success is hard work
-                </p>
-                <div className={classes.authorAndCreatedAt}>
-                  <span><span>Author:</span>Chinda Kelvin</span>
-                  <span><span>Created:</span> 27-02-2023</span>
-                </div>
-              </div>
-            </div>
-            <div className={classes.secondaryBlog}>
-              <img src={dataImg2} alt="" />
-              <div className={classes.secondaryBlogData}>
-                <h4>Data analysis</h4>
-                <p className={classes.desc}>
-                  how data science can save your time
-                </p>
-                <div className={classes.authorAndCreatedAt}>
-                  <span><span>Author:</span> Stephen Ufort</span>
-                  <span><span>Created:</span> 27-02-2023</span>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className={classes.cards}>
+      <img src={tech} alt=""  width='300'  height='250' />
+        <h3>tech and more</h3>
+        <p>Explore all you need about tech</p>
+        <div className={classes.btn}>Explore more</div>
+
         </div>
+      <div className={classes.cards}>
+      <img src={mountain} alt=""  width='300'  height='250' />
+        <h3>Nature and more</h3>
+        <p>Explore the world of nature</p>
+        <div className={classes.btn}>Explore more</div>
+
+
+        </div>
+      <div className={classes.cards}>
+      <img src={mountain2} alt=""  width='300'  height='250' />
+        <h3>Adventures</h3>
+        <p>lets take you on a wild trip</p>
+        <div className={classes.btn}>Explore more</div>
+
+
+        </div>
+      
+       
       </div>
+
     </div>
   )
 }

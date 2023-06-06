@@ -1,11 +1,7 @@
-.container {
-    min-height: 1200px;
-    width: 100%;
-}
 
 .wrapper {
-    max-width: 1180px;
-    height: 100%;
+    max-width: 100%;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -16,28 +12,38 @@
     font-size: 28px;
     margin: 3rem 0;
     margin-top: 7.5rem;
+    text-align: centers;
 }
 
 .categoriesAndBlogs {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.categoriesAndBlogs::-webkit-scrollbar {
+    display: none;
+    
 }
 
 .categories {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    color: #333;
-    margin-bottom: 2rem;
+    padding: 30px;
+    gap: 20px;
+  
 }
 
 
 .category {
     cursor: pointer;
     border-radius: 12px;
-    padding: 0.25rem 1.5rem;
+    padding: 20px;
     border: 1px solid #222;
     text-transform: capitalize;
+    margin: 0 10px ;
+
 }
 
 .category.active {
@@ -141,12 +147,10 @@
 }
 @media (max-width: 767.98px){
     .container {
-       display: flex;
-       max-width: 600px;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       margin-top: 60px;
+
+        width: 100%;
+        height: 100vh;
+
     }
     
     .wrapper {
@@ -156,33 +160,61 @@
  flex-direction: column;
 align-items: center;
 justify-content: center;
-margin-top: 80px;
+ margin-top: 100px;
+
+
 
 }
 h3{
 margin-top: 60px;
+text-align: center;
 }
-.categories{
+
+
+
+.categoriesAndBlogs {
+    
+    width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    max-width: 300px;
-overflow-x: scroll;
-margin-top: 60px;
-
-overflow: scroll;
-overflow-clip-margin: inherit;
+    
 }
+.categories{
+    width: max-content;
+    
+display: flex;
+  gap: 10px;
 
-
-.categoriesAndBlogs{
-
-    overflow-clip-margin: inherit;
+    
 }
 
 .categoriesAndBlogs {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.categoriesAndBlogs::-webkit-scrollbar {
+    display: none;
+    
+}
+
+.categories {
+    padding: 10px;
+  
+}
+
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: 300px;
+    margin: 10px 6px;
 }
 }

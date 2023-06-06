@@ -1,16 +1,11 @@
 .container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-image: url('../../assets/mountain2.jpg');
-    background-color: rgba(0, 0, 0, 0.3);
-    background-size: cover;
-    background-blend-mode: darken;
+
+    
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
 }
 
 .wrapper{
@@ -80,10 +75,20 @@ form > p > a{
 
 .wrapper{
     height: 60vh;
-    width: 300px;
-    border-radius: 20px;
+    
+    border-radius: 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     background-color: #fff;
+}
+form > input{
+
+    width: 100%;
+    outline: none;
+    border: 1px solid gray;
+   padding: 6px 12px  ;
+    border-radius:10px;
 }
 }
