@@ -5,16 +5,16 @@
 }
 
 .wrapper{
-    max-width: 1024px;
-    margin: 0 auto;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 10px 5px;
 }
 
 .goBack{
     position: absolute;
     text-decoration: none;
-    color: #222;
+    color: rgb(101, 101, 192);
     top: 5rem;
     left: 5rem;
     display: flex;
@@ -23,7 +23,8 @@
 }
 
 .wrapper > img{
-    height: 500px;
+    height: 400px;
+    width: 300px;
     object-fit: cover;
 }
 
@@ -118,9 +119,7 @@
     .container{
         display: flex;
         flex-direction: column;
-        
-        margin-top: 3rem;
-        margin-bottom: 1.5rem;
+        margin: 10px 10px;
     }
     
     .wrapper{
@@ -128,7 +127,7 @@
         display: flex;
         flex-direction: column;
         padding: 8px 16px;
-        max-width: 300px;
+    margin: 5px auto;
     }
     .desc{
         margin-top: 1.5rem;
