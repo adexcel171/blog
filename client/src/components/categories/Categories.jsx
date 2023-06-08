@@ -66,12 +66,14 @@ const Categories = () => {
               </span>
             ))}
           </div>
+          </div>
+          </div>
           {filteredBlogs?.length > 0 ?
             <div className={classes.blogs}>
               {filteredBlogs?.map((blog) => (
                 <div key={blog._id} className={classes.blog}>
                   <Link to={`/blogDetails/${blog?._id}`}>
-                    <img src={`https://mern-blog-ch1i.onrender.com/images/${blog?.photo}`} />
+                    <img className='img' src={`https://mern-blog-ch1i.onrender.com/images/${blog?.photo}`} />
                   </Link>
                   <div className={classes.blogData}>
                     <div className={classes.categoryAndMetadata}>
@@ -83,7 +85,7 @@ const Categories = () => {
                         <AiFillLike /> {blog?.likes?.length} likes
                       </div>
                     </div>
-                    <h4>{blog?.title}</h4>
+                    <h4>{blog.title}</h4>
                     <p className={classes.blogDesc}>
                       {blog?.desc}
                     </p>
@@ -100,8 +102,7 @@ const Categories = () => {
             </div>
             : <h3 className={classes.noBlogsMessage}>No blogs</h3>}
         </div>
-      </div>
-    </div>
+    
   )
 }
 
