@@ -66,8 +66,7 @@
 }
 
 .blog>a>img {
-    height: 100%;
-    width: 100%;
+ 
 }
 
 .categoryAndMetadata {
@@ -98,7 +97,7 @@
 }
 
 .blogs>.blog>.blogData>h4 {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 0.75rem;
 }
 
@@ -208,13 +207,52 @@ display: flex;
     padding: 10px;
   
 }
-
-
 .blog{
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    
+}
+
+
+.blogData{
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    width: max-content;
-    height: 300px;
+    width: 100%;
+
+    margin: 10px 20px;
+}
+.metadata{
+    display: flex;
+    align-items: flex-start;
+
+    gap: 5px;
+
+    margin: 5px 10px;
+}
+.authorAndCreatedAt{
+    display: flex;
+    gap: 10px;
+}
+.blog
+.blogDesc {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    color: gray;
+    align-items: center;
+    
     margin: 10px 6px;
 }
+.readMore{
+    margin-bottom: 100px;
+}
+.img{
+    width: 250px;
+    height: 300px;
+}
+
 }

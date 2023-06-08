@@ -137,6 +137,8 @@
     border: 1px solid #444;
     padding: 20px;
     width: 100%;
+    margin: 10px 20px;
+
 }
 .inputWrapperImg>label>span {
     display: inline-block;
@@ -149,4 +151,5 @@
     border-radius: 1rem;
     margin-left: 8rem;
 }
+
 }
